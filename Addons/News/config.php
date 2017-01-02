@@ -1,8 +1,7 @@
 <?php return 
 array (
-  'title' => '新闻',
+  'title' => '微官网',
   'name' => 'news',
   'author' => 'xupp',
-  'message' => '0',
-  'actions' => '[["栏目管理","category"]]',
+  'actions' => '[["分类管理","category"],["文章管理","article"]]',
 )?>

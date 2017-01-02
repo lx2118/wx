@@ -2,7 +2,7 @@
 <html lang="en" class="app">
 <head>
     <meta charset="utf-8"/>
-    <title>后台管理 | 后盾人</title>
+    <title>微信后台管理 | <?php echo v('config.system.webname');?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="/wechat/Public/css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="/wechat/Public/css/animate.css" type="text/css"/>
@@ -118,7 +118,7 @@
             <span class="thumb-sm avatar pull-left">
               <img src="/wechat/Public/images/avatar.jpg">
             </span>
-                    向军 <b class="caret"></b>
+                    xupp <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu animated fadeInRight">
                     <span class="arrow top"></span>
@@ -187,8 +187,8 @@
                                     </li>
                                     <li class="active">
                                         <a href="Index/index.html" class="active">
-                                            <i class="fa fa-dashboard icon">
-                                                <b class="bg-danger"></b>
+                                            <i class="fa fa-pencil icon">
+                                                <b class="bg-info"></b>
                                             </i>
                                             <span class="pull-right">
                                               <i class="fa fa-angle-down text"></i>
@@ -205,70 +205,42 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <!--<li>
-                                        <a href="#layout">
-                                            <i class="fa fa-columns icon">
-                                                <b class="bg-warning"></b>
-                                            </i>
-                                            <span class="pull-right">
-                                              <i class="fa fa-angle-down text"></i>
-                                              <i class="fa fa-angle-up text-active"></i>
-                                            </span>
-                                            <span>公众号</span>
-                                        </a>
-                                        <ul class="nav lt">
-                                            <li>
-                                                <a href="<?php echo u('wx/button');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>微信菜单</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo u('wx/system');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>系统回复</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo u('keyword/lists');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>文字回复</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>-->
-                                    <li>
-                                        <a href="#uikit">
-                                            <i class="fa fa-flask icon">
-                                                <b class="bg-success"></b>
-                                            </i>
-                                            <span class="pull-right">
-                                              <i class="fa fa-angle-down text"></i>
-                                              <i class="fa fa-angle-up text-active"></i>
-                                            </span>
-                                            <span>微官网</span>
-                                        </a>
-                                        <ul class="nav lt">
-                                            <li>
-                                                <a href="<?php echo u('article/categoryLists');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>分类管理</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo u('article/contentLists');?>">
-                                                    <b class="badge bg-info pull-right">369</b>
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>文章管理</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <?php if(is_array($_modules)): $i = 0; $__LIST__ = $_modules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mo): $mod = ($i % 2 );++$i;?><li>
+                                    <!--<li>-->
+                                        <!--<a href="#uikit">-->
+                                            <!--<i class="fa fa-flask icon">-->
+                                                <!--<b class="bg-success"></b>-->
+                                            <!--</i>-->
+                                            <!--<span class="pull-right">-->
+                                              <!--<i class="fa fa-angle-down text"></i>-->
+                                              <!--<i class="fa fa-angle-up text-active"></i>-->
+                                            <!--</span>-->
+                                            <!--<span>微官网</span>-->
+                                        <!--</a>-->
+                                        <!--<ul class="nav lt">-->
+                                            <!--<li>-->
+                                                <!--<a href="<?php echo u('article/categoryLists');?>">-->
+                                                    <!--<i class="fa fa-angle-right"></i>-->
+                                                    <!--<span>分类管理</span>-->
+                                                <!--</a>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<a href="<?php echo u('article/contentLists');?>">-->
+                                                    <!--<b class="badge bg-info pull-right">369</b>-->
+                                                    <!--<i class="fa fa-angle-right"></i>-->
+                                                    <!--<span>文章管理</span>-->
+                                                <!--</a>-->
+                                            <!--</li>-->
+                                        <!--</ul>-->
+                                    <!--</li>-->
+                                    <?php if(is_array($_modules)): $k = 0; $__LIST__ = $_modules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mo): $mod = ($k % 2 );++$k;?><li>
                                             <a href="#layout">
-                                                <i class="fa fa-columns icon">
-                                                    <b class="bg-warning"></b>
-                                                </i>
+                                                <?php if($k == 1): ?><i class="fa fa-flask icon">
+                                                     <b class="bg-success"></b>
+                                                    </i>
+                                                <?php else: ?>
+                                                    <i class="fa fa-columns icon">
+                                                        <b class="bg-warning"></b>
+                                                    </i><?php endif; ?>
                                             <span class="pull-right">
                                               <i class="fa fa-angle-down text"></i>
                                               <i class="fa fa-angle-up text-active"></i>
@@ -354,13 +326,13 @@
                     <div class="form-group">
                         <label>匹配方式</label>
                         <label class="radio-inline">
-                            <input type="radio" name="type" value="1"> 完全匹配
+                            <input type="radio" name="t" value="1" checked> 完全匹配
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="type" value="0"> 模糊匹配
+                            <input type="radio" name="t" value="0"> 模糊匹配
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="type" value="2"> 正则匹配
+                            <input type="radio" name="t" value="2"> 正则匹配
                         </label>
                     </div>
                     <div class="form-group">
@@ -396,7 +368,7 @@
 </div>
 <script>
     function controller($scope,$,_){
-
+        $scope.type = 1;
     }
 </script>
 

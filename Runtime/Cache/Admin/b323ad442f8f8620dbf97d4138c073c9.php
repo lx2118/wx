@@ -2,7 +2,7 @@
 <html lang="en" class="app">
 <head>
     <meta charset="utf-8"/>
-    <title>后台管理 | 后盾人</title>
+    <title>微信后台管理 | <?php echo v('config.system.webname');?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="/wechat/Public/css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="/wechat/Public/css/animate.css" type="text/css"/>
@@ -36,7 +36,7 @@
             <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="/wechat/Public/images/logo.png" class="m-r-sm">后盾人</a>
+            <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="/wechat/Public/images/logo.png" class="m-r-sm"><?php echo v('config.system.webname');?></a>
             <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
                 <i class="fa fa-cog"></i>
             </a>
@@ -118,7 +118,7 @@
             <span class="thumb-sm avatar pull-left">
               <img src="/wechat/Public/images/avatar.jpg">
             </span>
-                    向军 <b class="caret"></b>
+                    xupp <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu animated fadeInRight">
                     <span class="arrow top"></span>
@@ -185,10 +185,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="active">
-                                        <a href="Index/index.html" class="active">
-                                            <i class="fa fa-dashboard icon">
-                                                <b class="bg-danger"></b>
+                                    <li>
+                                        <a href="Index/index.html">
+                                            <i class="fa fa-pencil icon">
+                                                <b class="bg-info"></b>
                                             </i>
                                             <span class="pull-right">
                                               <i class="fa fa-angle-down text"></i>
@@ -205,95 +205,28 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <!--<li>
-                                        <a href="#layout">
-                                            <i class="fa fa-columns icon">
-                                                <b class="bg-warning"></b>
-                                            </i>
-                                            <span class="pull-right">
-                                              <i class="fa fa-angle-down text"></i>
-                                              <i class="fa fa-angle-up text-active"></i>
-                                            </span>
-                                            <span>公众号</span>
-                                        </a>
-                                        <ul class="nav lt">
-                                            <li>
-                                                <a href="<?php echo u('wx/button');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>微信菜单</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo u('wx/system');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>系统回复</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo u('keyword/lists');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>文字回复</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>-->
-                                    <li>
-                                        <a href="#uikit">
-                                            <i class="fa fa-flask icon">
-                                                <b class="bg-success"></b>
-                                            </i>
-                                            <span class="pull-right">
-                                              <i class="fa fa-angle-down text"></i>
-                                              <i class="fa fa-angle-up text-active"></i>
-                                            </span>
-                                            <span>微官网</span>
-                                        </a>
-                                        <ul class="nav lt">
-                                            <li>
-                                                <a href="<?php echo u('article/categoryLists');?>">
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>分类管理</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo u('article/contentLists');?>">
-                                                    <b class="badge bg-info pull-right">369</b>
-                                                    <i class="fa fa-angle-right"></i>
-                                                    <span>文章管理</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <?php if(is_array($modules)): $i = 0; $__LIST__ = $modules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mo): $mod = ($i % 2 );++$i;?><li>
+                                    <?php if(is_array($_modules)): $k = 0; $__LIST__ = $_modules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mo): $mod = ($k % 2 );++$k;?><li>
                                             <a href="#layout">
-                                                <i class="fa fa-columns icon">
-                                                    <b class="bg-warning"></b>
-                                                </i>
+                                                <?php if($k == 1): ?><i class="fa fa-flask icon">
+                                                     <b class="bg-success"></b>
+                                                    </i>
+                                                <?php else: ?>
+                                                    <i class="fa fa-columns icon">
+                                                        <b class="bg-warning"></b>
+                                                    </i><?php endif; ?>
                                             <span class="pull-right">
                                               <i class="fa fa-angle-down text"></i>
                                               <i class="fa fa-angle-up text-active"></i>
                                             </span>
-                                                <span>公众号</span>
+                                                <span><?php echo ($mo["title"]); ?></span>
                                             </a>
                                             <ul class="nav lt">
-                                                <li>
-                                                    <a href="<?php echo u('wx/button');?>">
-                                                        <i class="fa fa-angle-right"></i>
-                                                        <span>微信菜单</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo u('wx/system');?>">
-                                                        <i class="fa fa-angle-right"></i>
-                                                        <span>系统回复</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo u('keyword/lists');?>">
-                                                        <i class="fa fa-angle-right"></i>
-                                                        <span>文字回复</span>
-                                                    </a>
-                                                </li>
+                                                <?php if(is_array($mo["actions"])): $i = 0; $__LIST__ = $mo["actions"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$m): $mod = ($i % 2 );++$i;?><li>
+                                                        <a href="<?php echo U('admin/Entry/handler',array('mo'=>$mo['name'],'ac'=>$m[1],'type'=>'site'));?>">
+                                                            <i class="fa fa-angle-right"></i>
+                                                            <span><?php echo ($m["0"]); ?></span>
+                                                        </a>
+                                                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
                                             </ul>
                                         </li><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </ul>
