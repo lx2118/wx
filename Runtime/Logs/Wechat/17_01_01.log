@@ -1,0 +1,29 @@
+[ 2017-01-01T22:49:33+08:00 ] ::1 /wechat/index.php/wechat/api/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `wx_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:1.032813s ]
+INFO: [ app_begin ] --END-- [ RunTime:1.033683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-01-01T22:50:04+08:00 ] ::1 /wechat/index.php/wechat/api/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `wx_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:1.029727s ]
+INFO: [ app_begin ] --END-- [ RunTime:1.030500s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at D:\phpStudy\WWW\WeChat\Application\Common\Common\functions.php:15) D:\phpStudy\WWW\WeChat\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002144s ]
+

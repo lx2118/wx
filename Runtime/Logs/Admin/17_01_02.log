@@ -1,0 +1,134 @@
+[ 2017-01-02T11:56:37+08:00 ] ::1 /wechat/index.php/Admin/Module/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.125100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.065982s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:0.8768s ]
+SQL: SELECT * FROM `wx_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.2645s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:5.813747s ]
+INFO: [ app_begin ] --END-- [ RunTime:5.879935s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.1314s ]
+SQL: SELECT * FROM `wx_module`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.0053s ]
+SQL: SELECT `name` FROM `wx_module`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.139224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.139366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.585895s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.586053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.062789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.062848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028333s ]
+
+[ 2017-01-02T11:56:37+08:00 ] ::1 /wechat/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wx_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:1.030357s ]
+INFO: [ app_begin ] --END-- [ RunTime:1.031429s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `wx_module`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000678s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2017-01-02T11:56:46+08:00 ] ::1 /wechat/index.php/admin/Entry/handler/mo/wechat/ac/system/type/site.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `wx_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:1.035556s ]
+INFO: [ app_begin ] --END-- [ RunTime:1.036497s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.0601s ]
+SQL: SELECT * FROM `wx_module`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\phpStudy\WWW\WeChat\ThinkPHP\Library\Think\Template.class.php 第 212 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000560s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\WeChat\Runtime\Cache\Admin\3ffb4c2e74e6777863a6590fba377e6f.php 第 352 行.
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\WeChat\Runtime\Cache\Admin\3ffb4c2e74e6777863a6590fba377e6f.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003323s ]
+
+[ 2017-01-02T11:56:52+08:00 ] ::1 /wechat/index.php/admin/module/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `wx_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:1.042765s ]
+INFO: [ app_begin ] --END-- [ RunTime:1.043593s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `wx_module`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.0074s ]
+SQL: SELECT `name` FROM `wx_module`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001676s ]
+
+[ 2017-01-02T13:14:49+08:00 ] ::1 /wechat/index.php/admin/module/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.156187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041472s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:1.9578s ]
+SQL: SELECT * FROM `wx_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.2490s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:4.396217s ]
+INFO: [ app_begin ] --END-- [ RunTime:4.437881s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.2877s ]
+SQL: SELECT * FROM `wx_module`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wx_module` [ RunTime:0.0972s ]
+SQL: SELECT `name` FROM `wx_module`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.017182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.017298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.803973s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.804049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.344853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.344908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.163822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.163969s ]
+

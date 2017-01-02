@@ -1,0 +1,11 @@
+{
+    "require": {
+        "xupp/wechat": "^1.1"
+    },
+    "autoload":{
+        "psr-4":{
+            "Addons\\" : "Addons"
+        }
+    }
+
+}

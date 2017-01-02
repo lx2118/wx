@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2ce6d8654d1bc9750c903e5d7419c961",
+    "packages": [
+        {
+            "name": "xupp/wechat",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xupp/wechat.git",
+                "reference": "e09383edb628316845c346de661a9a46c684071c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xupp/wechat/zipball/e09383edb628316845c346de661a9a46c684071c",
+                "reference": "e09383edb628316845c346de661a9a46c684071c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "wechat\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "xupp",
+                    "email": "390241457@qq.com"
+                }
+            ],
+            "description": "this is a wechat sdk",
+            "time": "2016-12-30T05:02:58+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
